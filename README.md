@@ -27,6 +27,8 @@ performing CRUD operations, and executing advanced SQL queries. The goal is to s
 
 ![ERD](https://github.com/najirh/Library-System-Management---P2/blob/main/library_erd.png)
 
+![library_erd](https://github.com/user-attachments/assets/e778422c-af63-41cd-b1cd-aab95a1c8e2f)
+
 - **Database Creation**: Created a database.
 - **Table Creation**: Created tables for branches, employees, members, books, issued status, and return status.
                       Each table includes relevant columns and relationships.
@@ -40,8 +42,7 @@ performing CRUD operations, and executing advanced SQL queries. The goal is to s
 - **Delete**: Removed records from the `members` table as needed.
 
 **Task 1. Create a New Book Record**
--- 
-"978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')"
+-- "978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')"
 
 **Task 2: Update an Existing Member's Address**
 -- change address to '125 Oak St' of member_id C103
@@ -97,7 +98,6 @@ The following SQL queries were used to address specific questions:
 -- Use the CREATE TABLE AS (CTAS) statement to create a new table active_members containing members who have 
    issued at least one book in the last 2 months.
 
-
 **Task 17: Find Employees with the Most Book Issues Processed**  
 -- Write a query to find the top 3 employees who have processed the most book issues. Display the employee name, 
    number of books processed, and their branch.
@@ -106,4 +106,38 @@ The following SQL queries were used to address specific questions:
 -- Write a query to identify members who have issued books more than twice with the status "damaged" in the books table.
    Display the member name, book title, and the number of times they've issued damaged books.    
 
+**Task 19: Stored Procedure**
+-- Objective: Create a stored procedure to manage the status of books in a library system.
+   Description:
+   Write a stored procedure that updates the status of a book in the library based on its issuance. The procedure should function 
+   as follows:
+   The stored procedure should take the book_id as an input parameter.
+   The procedure should first check if the book is available (status = 'yes').
+   If the book is available, it should be issued, and the status in the books table should be updated to 'no'.
+   If the book is not available (status = 'no'), the procedure should return an error message indicating that the book is currently 
+   not available.
 
+**Task 20: Create Table As Select (CTAS)**
+-- Objective: Create a CTAS (Create Table As Select) query to identify overdue books and calculate fines.
+
+   Description: Write a CTAS query to create a new table that lists each member and the books they have issued but not returned 
+   within 30 days. The table should 
+   include:
+   The number of overdue books.
+   The total fines, with each day's fine calculated at $0.50.
+   The number of books issued by each member.
+   The resulting table should show:
+   Member ID
+   Number of overdue books
+   Total fines
+
+## Reports
+
+- **Database Schema**: Detailed table structures and relationships.
+- **Data Analysis**: Insights into book categories, employee salaries, member registration trends, and issued books.
+- **Summary Reports**: Aggregated data on high-demand books and employee performance.
+
+## Conclusion
+
+This project demonstrates the application of SQL skills in creating and managing a library management system. It includes database setup,
+data manipulation, and advanced querying, providing a solid foundation for data management and analysis.
