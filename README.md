@@ -23,11 +23,9 @@ performing CRUD operations, and executing advanced SQL queries. The goal is to s
 
 ## Project Structure
 
-### 1. Database Setup
-
-![ERD](https://github.com/najirh/Library-System-Management---P2/blob/main/library_erd.png)
-
 ![library_erd](https://github.com/user-attachments/assets/e778422c-af63-41cd-b1cd-aab95a1c8e2f)
+
+### 1. Database Setup
 
 - **Database Creation**: Created a database.
 - **Table Creation**: Created tables for branches, employees, members, books, issued status, and return status.
@@ -42,10 +40,10 @@ performing CRUD operations, and executing advanced SQL queries. The goal is to s
 - **Delete**: Removed records from the `members` table as needed.
 
 **Task 1. Create a New Book Record**
--- "978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')"
+--"978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')"
 
 **Task 2: Update an Existing Member's Address**
--- change address to '125 Oak St' of member_id C103
+--change address to '125 Oak St' of member_id C103
 
 **Task 3: Delete a Record from the Issued Status Table**
 -- Objective: Delete the record with issued_id = 'IS125' from the issued_status table.
