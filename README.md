@@ -2,11 +2,10 @@
 
 ## Project Overview
 
-**Project Title**: Library Management System  
-**Level**: Intermediate  
-
 This project demonstrates the implementation of a Library Management System using SQL. It includes creating and managing tables, 
-performing CRUD operations, and executing advanced SQL queries. The goal is to showcase skills in database design, manipulation, and querying.
+performing CRUD operations, and executing advanced SQL queries. The goal is to showcase skills in database design, manipulation, and querying.<br>
+
+**Level**: Intermediate  
 
 ![Image](https://github.com/user-attachments/assets/f3c1e3fc-81c3-4048-b6ea-65a66a2f227a)
 
@@ -21,7 +20,7 @@ performing CRUD operations, and executing advanced SQL queries. The goal is to s
 4. **Advanced SQL Queries**:
    Develop complex queries to analyze and retrieve specific data.
 
-## Project Structure
+## ERD Report
 
 ![library_erd](https://github.com/user-attachments/assets/e778422c-af63-41cd-b1cd-aab95a1c8e2f)
 
